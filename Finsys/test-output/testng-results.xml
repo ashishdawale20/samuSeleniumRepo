@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="18" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-04-02T20:33:48 IST" name="Default suite" finished-at="2020-04-02T20:48:17 IST" duration-ms="868501">
+    <groups>
+    </groups>
+    <test started-at="2020-04-02T20:33:48 IST" name="Default test" finished-at="2020-04-02T20:48:17 IST" duration-ms="868501">
+      <class name="ejaruti.UnitTest.CreateCompanyTest">
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:33:48 IST" name="beforMethod" finished-at="2020-04-02T20:34:25 IST" duration-ms="37071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:34:25 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:34:26 IST" duration-ms="697" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div[4]/div[2]/div/div[1]/div[1]/div[2]/a[2]"}
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 09b1630d23ff4e8473ceb6a318a22082
+*** Element info: {Using=xpath, value=/html/body/div[3]/div[4]/div[2]/div/div[1]/div[1]/div[2]/a[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div[4]/div[2]/div/div[1]/div[1]/div[2]/a[2]"}
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 09b1630d23ff4e8473ceb6a318a22082
+*** Element info: {Using=xpath, value=/html/body/div[3]/div[4]/div[2]/div/div[1]/div[1]/div[2]/a[2]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at ejagruti.gfl.SeleniumOperations.clickButton(SeleniumOperations.java:42)
+at ejaruti.UnitTest.CreateCompanyTest.createCompanyWithInputParameterTest(CreateCompanyTest.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:34:26 IST" name="afterMethod" finished-at="2020-04-02T20:34:29 IST" duration-ms="2755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:34:29 IST" name="beforMethod" finished-at="2020-04-02T20:34:56 IST" duration-ms="26558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:34:56 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:35:24 IST" duration-ms="28038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:35:24 IST" name="afterMethod" finished-at="2020-04-02T20:35:24 IST" duration-ms="720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:35:24 IST" name="beforMethod" finished-at="2020-04-02T20:35:49 IST" duration-ms="24178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:35:49 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:36:16 IST" duration-ms="27899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:36:16 IST" name="afterMethod" finished-at="2020-04-02T20:36:18 IST" duration-ms="1358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:36:18 IST" name="beforMethod" finished-at="2020-04-02T20:36:45 IST" duration-ms="27059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:36:45 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:37:14 IST" duration-ms="29411" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [avapya966] but found [avapya587]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [avapya966] but found [avapya587]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at ejaruti.UnitTest.CreateCompanyTest.createCompanyWithInputParameterTest(CreateCompanyTest.java:86)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:37:14 IST" name="afterMethod" finished-at="2020-04-02T20:37:16 IST" duration-ms="1576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:37:16 IST" name="beforMethod" finished-at="2020-04-02T20:37:35 IST" duration-ms="19050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:37:35 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:38:04 IST" duration-ms="29400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:38:04 IST" name="afterMethod" finished-at="2020-04-02T20:38:07 IST" duration-ms="2546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:38:07 IST" name="beforMethod" finished-at="2020-04-02T20:38:33 IST" duration-ms="25790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:38:33 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:38:56 IST" duration-ms="23748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:38:56 IST" name="afterMethod" finished-at="2020-04-02T20:38:57 IST" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:38:57 IST" name="beforMethod" finished-at="2020-04-02T20:39:15 IST" duration-ms="18150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:39:15 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:39:39 IST" duration-ms="24333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:39:39 IST" name="afterMethod" finished-at="2020-04-02T20:39:40 IST" duration-ms="546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:39:40 IST" name="beforMethod" finished-at="2020-04-02T20:39:56 IST" duration-ms="16552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:39:56 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:40:22 IST" duration-ms="25594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:40:22 IST" name="afterMethod" finished-at="2020-04-02T20:40:23 IST" duration-ms="618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:40:23 IST" name="beforMethod" finished-at="2020-04-02T20:40:39 IST" duration-ms="15946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:40:39 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:41:03 IST" duration-ms="24147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:41:03 IST" name="afterMethod" finished-at="2020-04-02T20:41:03 IST" duration-ms="603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:41:03 IST" name="beforMethod" finished-at="2020-04-02T20:41:19 IST" duration-ms="15834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:41:19 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:41:43 IST" duration-ms="23551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:41:43 IST" name="afterMethod" finished-at="2020-04-02T20:41:43 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:41:43 IST" name="beforMethod" finished-at="2020-04-02T20:41:58 IST" duration-ms="15131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:41:58 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:42:22 IST" duration-ms="23616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:42:22 IST" name="afterMethod" finished-at="2020-04-02T20:42:22 IST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:42:22 IST" name="beforMethod" finished-at="2020-04-02T20:42:38 IST" duration-ms="16153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:42:38 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:43:02 IST" duration-ms="23541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:43:02 IST" name="afterMethod" finished-at="2020-04-02T20:43:02 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:43:02 IST" name="beforMethod" finished-at="2020-04-02T20:43:17 IST" duration-ms="15334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:43:17 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:43:41 IST" duration-ms="23569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:43:41 IST" name="afterMethod" finished-at="2020-04-02T20:43:41 IST" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:43:41 IST" name="beforMethod" finished-at="2020-04-02T20:43:56 IST" duration-ms="15119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:43:56 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:44:19 IST" duration-ms="23600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:44:19 IST" name="afterMethod" finished-at="2020-04-02T20:44:20 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:44:20 IST" name="beforMethod" finished-at="2020-04-02T20:44:35 IST" duration-ms="15137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:44:35 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:44:58 IST" duration-ms="23527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:44:58 IST" name="afterMethod" finished-at="2020-04-02T20:44:58 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:44:58 IST" name="beforMethod" finished-at="2020-04-02T20:45:14 IST" duration-ms="15388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:45:14 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:45:37 IST" duration-ms="23598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:45:37 IST" name="afterMethod" finished-at="2020-04-02T20:45:38 IST" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:45:38 IST" name="beforMethod" finished-at="2020-04-02T20:45:53 IST" duration-ms="15287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:45:53 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:46:17 IST" duration-ms="23652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:46:17 IST" name="afterMethod" finished-at="2020-04-02T20:46:17 IST" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:46:17 IST" name="beforMethod" finished-at="2020-04-02T20:46:32 IST" duration-ms="15474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:46:32 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:46:56 IST" duration-ms="24088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:46:56 IST" name="afterMethod" finished-at="2020-04-02T20:46:57 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:46:57 IST" name="beforMethod" finished-at="2020-04-02T20:47:12 IST" duration-ms="15748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:47:12 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:47:36 IST" duration-ms="23911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:47:36 IST" name="afterMethod" finished-at="2020-04-02T20:47:36 IST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:47:36 IST" name="beforMethod" finished-at="2020-04-02T20:47:52 IST" duration-ms="15898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="createCompanyWithInputParameterTest()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:47:52 IST" name="createCompanyWithInputParameterTest" finished-at="2020-04-02T20:48:16 IST" duration-ms="23948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompanyWithInputParameterTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ejaruti.UnitTest.CreateCompanyTest@22635ba0]" started-at="2020-04-02T20:48:16 IST" name="afterMethod" finished-at="2020-04-02T20:48:17 IST" duration-ms="586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- ejaruti.UnitTest.CreateCompanyTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

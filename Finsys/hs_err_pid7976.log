@@ -1,0 +1,15 @@
+
+[error occurred during error reporting (printing native stack), id 0xc00000fd, EXCEPTION_STACK_OVERFLOW (0xc00000fd) at pc=0x00007ffed70a6988]
+
+VM_Operation (0x0000000101efdad0): RevokeBias, mode: safepoint, requested by thread 0x0000012d013a6800
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x0000012d013a5b90, length=17, elements={
+0x0000012d5f04e000, 0x0000012d7fbf4800, 0x0000012d7fbf8000, 0x0000012d00809000,
+0x0000012d0080b800, 0x0000012d0080d000, 0x0000012d00813800, 0x0000012d00819800,
+0x0000012d00938000, , , ,
+, , , ,
+ 
